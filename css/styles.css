@@ -24,7 +24,7 @@ body {
     bottom: 0;
 }
 .header{
-    height: 1000px;
+    /* height: 1000px; */
     overflow: hidden;
     position: relative;
     display: flex;
@@ -388,4 +388,167 @@ button:hover{
     font-size: 25px;
     padding: 15px;
     text-decoration: line-through;
+}
+@media (max-width: 800px) {
+    body{
+        max-width: 100%;
+    }
+    .bg_video {
+        display: none;
+    }
+    .header{
+        background-image: url(../images/fon.jpg);
+        background-repeat: no-repeat;
+    
+    }
+    .container {
+        width: 500px;
+        margin: 0 auto;
+        z-index: 2;
+        padding: 0 15px;
+    }
+    
+    .header__logo{
+        width: 100%;
+        height: 100px;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .promo-img{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        width: 70px;
+    }
+    .header__about__info{
+        width: 50%;
+        margin: 0 25px;
+        /* height: 250px; */
+        background-color: rgb(244, 244, 244, 82%);
+    }
+    .header__about__info__characterics{
+        font-size: 12px;
+    }
+    .characteristics-title{
+        font-size: 15px;
+    }
+    .characteristics-title::after{
+        content: '';
+        margin: 8px 0 ;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 36px;
+        height: 5px;
+        background-color: blue;
+    }
+    .characteristics{
+        margin-top: 25px;
+    }
+    .compostion{
+        padding:  30px 0;
+    }
+    .compostion__ingridient{
+        height: 150px;
+        width: 135px;
+        margin-top: 15px;
+    }
+    .compostion__ingridient__img{
+        width: 80px;
+        height: 80px;
+    }
+    .molecules{
+        display: block;
+        height: 70px;
+        width: 70px;
+    }
+    .compostion__ingridient__name{
+        height: 30px;
+        width: 120px;
+    }
+    .compostion__product-card{
+        height: 180px;
+        width: 135px;
+        margin-top: 216px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .product-img{
+        display: block;
+        position: relative;
+        top: 35px;
+        height: 70px;
+        width: 50px;
+    }
+    .order{
+        height: 30px;
+        width: 120px;
+    }
+    .reviews{
+        overflow: hidden;
+        width: 100%;
+        height: 1000px;
+    }
+    .owl_carousel{
+        width: 100%;
+    }
+    .reviews__wrap{
+       margin-top: 100px;
+       margin-bottom: 100px;
+       width: 100%;
+    }
+    .carousel__item{
+        color: rgb(50, 50, 50);
+        width: 280px;
+        padding: 25px;
+        margin-right: 10px;
+        border: 1px solid #00008B;
+    }
+    .author__info{
+        display: block;
+    }
+    .author__ava{
+        display: block;
+        margin: 0 auto;
+        height: 40px;
+        width: 40px;
+    }
+    
+    .promo__img{
+        display: none;
+        
+    }
+    .promo__description{
+       margin-top: 30px;
+    }
+    .promo__char{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .product-name{
+        margin-top: 50px;
+    }
+    .timer-wrap{
+        font-size: 35px;
+    }
+    .timer{
+        margin-bottom: 20px;
+    }
+    .orders__form{
+        width: 100%;
+        margin-top: 10px;
+        padding: 50px;
+        margin-left: 50px;
+    }
+    .product-card{
+        display: none;
+    }
+    
 }
